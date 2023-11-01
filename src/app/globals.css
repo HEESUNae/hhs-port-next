@@ -1,15 +1,12 @@
-@font-face {
-  font-family: 'SUIT-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css');
+
 * {
   padding: 0;
   margin: 0;
-  font-family: 'SUIT-Regular';
+  font-family: 'SUIT';
   color: #333;
   word-break: keep-all;
+  font-weight: 400;
 }
 html {
   font-size: 10px;
@@ -26,12 +23,19 @@ h2 {
 li {
   list-style: none;
 }
+:where(h1, h2, h3, b) {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
 
 .inner {
   max-width: 140rem;
   margin: 0 auto;
 }
 @media (max-width: 400px) {
+  html {
+    font-size: 9px;
+  }
   h2 {
     margin-top: 1rem;
     text-align: center;
