@@ -1,27 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'SUIT-Regular';
+  color: #333;
+  word-break: keep-all;
 }
-
+html {
+  font-size: 10px;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  margin-bottom: 1rem;
+}
+li {
+  list-style: none;
+}
+
+.inner {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  h2 {
+    margin-top: 1rem;
+    text-align: center;
+  }
 }

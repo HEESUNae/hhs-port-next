@@ -1,0 +1,17 @@
+.header {
+  padding: 1.5rem 0;
+  .logo {
+    line-height: 1;
+    .logoText {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .header {
+    padding: 1.5rem;
+  }
+}
