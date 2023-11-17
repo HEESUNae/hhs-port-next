@@ -23,6 +23,7 @@ export const thumbnailImg = {
   rabbitBlog: require('../../public/assets/thumbnail/thumbnail-rabbitBlog.jpg'),
   sweetPotato: require('../../public/assets/thumbnail/thumbnail-sweet.jpeg'),
   todoList: require('../../public/assets/thumbnail/thumbnail-todoList.jpg'),
+  starbucks: require('../../public/assets/thumbnail/thumbnail-starbucks.png'),
 };
 
 export const appImg = {
