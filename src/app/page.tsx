@@ -37,15 +37,7 @@ export default function Home() {
         <h2>{'< Web Project />'}</h2>
         {cardDesc.map((card) => (
           <div key={card.title}>
-            <Card
-              img={card.image}
-              title={card.title}
-              subTitle={card.subTitle}
-              desc={card.desc}
-              workDesc={card.workDesc}
-              skill={card.skill}
-              link={card.link}
-            />
+            <Card list={card} />
           </div>
         ))}
       </section>

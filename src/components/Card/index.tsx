@@ -5,25 +5,23 @@ import styles from './card.module.scss';
 import { icon } from '@/consts/image';
 
 interface CardProps {
-  [key: string]: string;
+  list: { [key: string]: string };
 }
 
-const Card = ({ img, title, subTitle, desc, workDesc, skill, link }: CardProps) => {
+const Card: React.FC<CardProps> = ({ list }) => {
   return (
     <div className={styles.card}>
       <figure>
-        <Image src={img} width={300} height={200} alt="" />
+        <Image src={list.image} width={300} height={200} alt="" />
       </figure>
       <div className={styles.cardInfo}>
-        <h3>{title}</h3>
-        <p className={styles.cardDesc}>{subTitle}</p>
-        <p>{desc}</p>
-        <b>작업하게 된 계기</b>
-        <p>{workDesc}</p>
+        <h3>{list.title}</h3>
+        <p className={styles.cardDesc}>{list.subTitle}</p>
+        <p>{list.desc}</p>
         <b>기술스택</b>
-        <p>{skill}</p>
+        <p>{list.skill}</p>
         <div className={styles.buttons}>
-          <Link href={link} target="_blank">
+          <Link href={list.link} target="_blank">
             <Image src={icon.gotoSite} width={20} height={20} alt="" />
             사이트 바로가기
           </Link>
