@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import styles from './page.module.scss';
 import { icon, skillImg } from '@/consts/image';
-import { appDesc, cardDesc } from '@/consts/contents';
+import { appDesc, cardDesc, skillCategory } from '@/consts/contents';
 import Skill from '@/components/Skill';
 import Card from '@/components/Card';
 
 export default function Home() {
   return (
-    <main>
+    <main id="contents">
       <div className={styles.main}></div>
       <section className={styles.sec01}>
         <div className={styles.intro}>
@@ -22,15 +22,9 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.skillContainer}>
-          <Skill iconSrc={skillImg.html} name="HTML" />
-          <Skill iconSrc={skillImg.css} name="CSS" />
-          <Skill iconSrc={skillImg.javascript} name="JavaScript" />
-          <Skill iconSrc={skillImg.typescript} name="TypeScript" />
-          <Skill iconSrc={skillImg.react} name="React" />
-          <Skill iconSrc={skillImg.react} name="React Native" />
-          <Skill iconSrc={skillImg.next} name="Next.js" />
-          <Skill iconSrc={skillImg.node} name="Node.js" />
-          <Skill iconSrc={skillImg.mongo} name="MongoDB" />
+          {skillCategory.map((item) => (
+            <Skill key={item.name} iconSrc={item.image} name={item.name} />
+          ))}
         </div>
       </section>
       <section className={styles.sec02}>

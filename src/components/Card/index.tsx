@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ list }) => {
   return (
     <div className={styles.card}>
       <figure>
-        <Image src={list.image} width={300} height={200} alt="" />
+        <Image src={list.image} width={300} height={200} alt={list.imageAlt} />
       </figure>
       <div className={styles.cardInfo}>
         <h3>{list.title}</h3>
@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({ list }) => {
         <b>기술스택</b>
         <p>{list.skill}</p>
         <div className={styles.buttons}>
-          <Link href={list.link} target="_blank">
+          <Link href={list.link} target="_blank" title="새창열림">
             <Image src={icon.gotoSite} width={20} height={20} alt="" />
             사이트 바로가기
           </Link>

@@ -28,6 +28,26 @@ li {
   letter-spacing: -0.5px;
 }
 
+#skipMenu {
+  position: relative;
+  z-index: 9999;
+}
+#skipMenu a {
+  position: absolute;
+  left: 0;
+  top: -200px;
+  width: 160px;
+  line-height: 30px;
+  border: 1px solid #dedede;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+#skipMenu a:focus,
+#skipMenu a:active {
+  top: 0;
+}
+
 .inner {
   max-width: 140rem;
   margin: 0 auto;
