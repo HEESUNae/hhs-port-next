@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: '프론트엔드 개발자 황희선 포트폴리오 입니다.',
     url: 'https://hhs-port.vercel.app/',
     images: {
-      url: '../../public/assets/opengraph.jpg',
+      url: '/assets/opengraph.jpg',
       width: 1000,
       height: 628,
     },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'HEESUN PORTFOLIO',
     description: '프론트엔드 개발자 황희선 포트폴리오 입니다.',
     images: {
-      url: '../../public/assets/opengraph.jpg',
+      url: '/assets/opengraph.jpg',
       width: 1000,
       height: 628,
     },
