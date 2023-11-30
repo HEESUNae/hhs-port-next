@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     url: 'https://hhs-port.vercel.app/',
     images: {
       url: '/assets/opengraph.jpg',
-      width: 1000,
-      height: 628,
+      width: 1200,
+      height: 630,
     },
   },
   twitter: {
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     description: '프론트엔드 개발자 황희선 포트폴리오 입니다.',
     images: {
       url: '/assets/opengraph.jpg',
-      width: 1000,
-      height: 628,
+      width: 1200,
+      height: 630,
     },
   },
 };
