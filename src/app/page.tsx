@@ -29,11 +29,13 @@ export default function Home() {
       </section>
       <section className={styles.sec02}>
         <h2>{'< Web Project />'}</h2>
-        {cardDesc.map((card) => (
-          <div key={card.title}>
-            <Card list={card} />
-          </div>
-        ))}
+        <ul className="card-container">
+          {cardDesc.map((card) => (
+            <li key={card.title}>
+              <Card list={card} />
+            </li>
+          ))}
+        </ul>
       </section>
       <section className={styles.sec03}>
         <h2>{'< App Project />'}</h2>

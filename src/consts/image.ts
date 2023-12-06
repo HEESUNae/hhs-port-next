@@ -24,6 +24,7 @@ export const thumbnailImg = {
   sweetPotato: require('../../public/assets/thumbnail/thumbnail-sweet.jpeg'),
   todoList: require('../../public/assets/thumbnail/thumbnail-todoList.jpg'),
   starbucks: require('../../public/assets/thumbnail/thumbnail-starbucks.png'),
+  green: require('../../public/assets/thumbnail/thumbnail-green.svg').default,
 };
 
 export const appImg = {
