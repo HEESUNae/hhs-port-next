@@ -25,6 +25,7 @@ export const thumbnailImg = {
   todoList: require('../../public/assets/thumbnail/thumbnail-todoList.jpg'),
   starbucks: require('../../public/assets/thumbnail/thumbnail-starbucks.png'),
   green: require('../../public/assets/thumbnail/thumbnail-green.svg').default,
+  mapleStory: require('../../public/assets/thumbnail/thumbnail-maple.jpeg'),
 };
 
 export const appImg = {

@@ -27,6 +27,9 @@ li {
   font-weight: 600;
   letter-spacing: -0.5px;
 }
+img {
+  object-fit: cover;
+}
 
 #skipMenu {
   position: relative;
