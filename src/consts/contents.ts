@@ -42,7 +42,7 @@ export const skillCategory = [
 export const cardDesc = [
   {
     image: thumbnailImg.mapleStory,
-    imageAlt: '',
+    imageAlt: '메이플스토리',
     title: '메이플스토리',
     subTitle: '메이플스토리 캐릭터 정보와 랭킹을 소개하는 포트폴리오 (기여도 100%)',
     desc: '메이플스토리 랭킹과 캐릭터 정보 및 장착한 아이템의 능력치를 확인할 수 있습니다.',
@@ -87,6 +87,7 @@ export const cardDesc = [
   },
   {
     image: thumbnailImg.incheon,
+    imageAlt: '',
     title: 'Incheon Parking',
     subTitle: 'OpenAPI를 활용하여 만든 인천광역시 주차장 정보 현황을 공유하는 포트폴리오 (기여도 100%)',
     desc: '인천광역시 주차장 현황과 전체 주차면적 수를 소개합니다.',

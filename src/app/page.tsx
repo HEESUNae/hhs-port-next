@@ -1,9 +1,19 @@
 import Image from 'next/image';
 import styles from './page.module.scss';
-import { icon, skillImg } from '@/consts/image';
+import { icon } from '@/consts/image';
 import { appDesc, cardDesc, skillCategory } from '@/consts/contents';
 import Skill from '@/components/Skill';
 import Card from '@/components/Card';
+
+export interface CardType {
+  image: string;
+  title: string;
+  desc: string;
+  skill: string;
+  link: string;
+  imageAlt: any;
+  subTitle: string;
+}
 
 export default function Home() {
   return (
@@ -30,7 +40,7 @@ export default function Home() {
       <section className={styles.sec02}>
         <h2>{'< Web Project />'}</h2>
         <ul className="card-container">
-          {cardDesc.map((card) => (
+          {cardDesc.map((card: any) => (
             <li key={card.title}>
               <Card list={card} />
             </li>

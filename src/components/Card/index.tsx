@@ -5,7 +5,7 @@ import styles from './card.module.scss';
 import { icon } from '@/consts/image';
 
 interface CardProps {
-  list: { [key: string]: string };
+  list: { image: string; title: string; desc: string; skill: string; link: string; imageAlt: any; subTitle: string };
 }
 
 const Card: React.FC<CardProps> = ({ list }) => {
